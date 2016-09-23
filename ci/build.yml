@@ -1,7 +1,9 @@
 ---
 platform: linux
 
-image: docker:///maven#3.2-jdk-7-onbuild
+image_resource:
+  type: docker-image
+  source: {repository: maven, tag: "3.3-jdk-7-onbuild"}
 
 inputs:
 - name: source

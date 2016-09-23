@@ -3,7 +3,7 @@ resources:
 - name: source
   type: git
   source:
-    uri: https://github.com/cf-platform-eng/quote-service
+    uri: https://github.com/cwsteve2117/quote-service
     branch: master
 
 - name: dev-app
