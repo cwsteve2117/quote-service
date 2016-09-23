@@ -1,13 +1,17 @@
 ---
 platform: linux
 
-image: docker:///canopycip/cip-cf-ci
+image:
+  type: docker-image
+  source:
+    repository: canopycip/cip-cf-ci
+    tag: "latest"
 
 inputs:
 - name: source
 
 params:
-  CF_APPS_DOMAIN: cfapps.io
+  CF_APPS_DOMAIN: pcfazure.com
 
 run:
   path: source/ci/test.sh
